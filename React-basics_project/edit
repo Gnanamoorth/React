@@ -1,0 +1,47 @@
+<Content1
+      clsName="naturals_places"
+      subclas1="naturals_place_falls"
+      img1="https://github.com/tech2etc/React-Trippy-Tour-Website-Template/blob/main/src/assets/10.jpg?raw=true"
+      heading1="Natural Falls"
+      para1="Located in northeast Oklahoma in the scenic Ozark Highlands region, Natural Falls State Park features a 77-foot (23 m) waterfall cascading through rock formations and creating a hidden, serene atmosphere at the bottom of a narrow V-shaped valley. "
+    
+      subclas2="naturals_place_himalays"
+      img2="https://github.com/tech2etc/React-Trippy-Tour-Website-Template/blob/main/src/assets/4.jpg?raw=true"
+      heading2="Himalayas"
+      para2="The Himalayas include the highest mountains in the world, with more than 110 peaks rising to elevations of 24,000 feet (7,300 metres) or more above sea level"
+ 
+      subclas3="natural_place_beach"
+      img3="https://github.com/tech2etc/React-Trippy-Tour-Website-Template/blob/main/src/assets/8.jpg?raw=true"
+      heading3="Andaman and Nicobar Islands"
+      para3="The Andaman and Nicobar Islands is a union territory of India consisting of 572 islands, of which 37 are inhabited, at the junction of the Bay of Bengal and the Andaman Sea. The territory is about 150 km (93 mi) north of Aceh in Indonesia and separated from Thailand and Myanmar by the Andaman Sea."
+      />  
+
+      import "./content1.css";
+import React from 'react';
+//import { Slide } from 'react-slideshow-image';
+//import { useState, useEffect } from 'react';
+const Content1 = (props) => {
+   return ( 
+        <div className={`${props.clsName}`}>
+            
+            <div className={props.subclas1}>
+                <img src={props.img1} alt=""/>
+                <h1>{props.heading1}</h1>
+                <p>{props.para1}</p>
+            </div>
+            <div className={props.subclas2}>
+                <img src={props.img2} alt="" />
+                <h1>{props.heading2}</h1>
+                <p>{props.para2}</p>
+            </div>
+            <div v className={props.subclas3}>
+                <img src={props.img3} alt="" />
+                <h1>{props.heading3}</h1>
+                <p>{props.para3}</p>
+            </div>
+           
+        </div> 
+     );
+}
+  
+export default Content1;
